@@ -58,7 +58,7 @@
                 <p id='bio'>Đam Mê IT</p>
                 <div class='center'>
                     <div class='border'></div>
-                    <p id='contact-text'>Contact for work</p>
+                    <p id='contact-text'>Click Here To Play Music</p>
                 </div>
                 <!-- contact -->
                 <div class='center boxs' id='boxs'>
@@ -178,12 +178,21 @@
         </div>
         <div id='bg'></div>
     </div>
-    <audio loop autoplay>
-        <source src="https://cdn.jsdelivr.net/gh/wonris09-git/nhac/1.mp3" type="audio/mpeg">
-    </audio>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="./js/main.js"></script>
+    <audio id="myAudio" loop>
+        <source src="./music/1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('myAudio');
+            audio.volume = 0.5;
+            audio.play(); // Phát âm thanh khi người dùng nhấp
+        });
+    </script>
 </body>
 
 </html>

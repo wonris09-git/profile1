@@ -1,5 +1,5 @@
 const snowflakeChar = '❄';  // Bạn có thể thay đổi biểu tượng bông tuyết
-const snowflakeCount = 100;  // Số lượng bông tuyết
+const snowflakeCount = 1000000;  // Số lượng bông tuyết
 
 function createSnowflake() {
     const snowflake = document.createElement('div');
